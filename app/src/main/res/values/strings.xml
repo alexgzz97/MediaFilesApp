@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">MediaFilesApp</string>
+    <string name="contact">jesus.gonzalez@definityfirst.com</string>
+    <string name="imagenes">Imagenes</string>
+    <string name="videos">Videos</string>
+    <string name="texto">Archivos de Texto</string>
+
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
