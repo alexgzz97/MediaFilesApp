@@ -3,16 +3,16 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_imagenes"
             android:checked="true"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/imagenes" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_videos"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/videos" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_texto"
             android:icon="@drawable/ic_menu_text"
             android:title="@string/texto" />
     </group>
