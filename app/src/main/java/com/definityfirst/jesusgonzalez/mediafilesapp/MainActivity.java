@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity
             e.printStackTrace();
         }
         FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.content_main, fragment).commit();
+        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
