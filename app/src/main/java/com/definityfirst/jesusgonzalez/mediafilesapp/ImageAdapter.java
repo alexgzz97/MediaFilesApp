@@ -3,6 +3,7 @@ package com.definityfirst.jesusgonzalez.mediafilesapp;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.ThumbnailUtils;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -66,7 +67,8 @@ public class ImageAdapter extends BaseAdapter {
         }
         Bitmap bm = decodeSampledBitmapFromUri(itemList.get(position), 220,
                 220);
-        imageView.setImageBitmap(bm);
+        Bitmap ThumbImage = ThumbnailUtils.extractThumbnail(bm, 100, 100);
+        imageView.setImageBitmap(ThumbImage);
         return imageView;
     }
 
@@ -83,7 +85,8 @@ public class ImageAdapter extends BaseAdapter {
         // Decode bitmap with inSampleSize set
         options.inJustDecodeBounds = false;
         bm = BitmapFactory.decodeFile(path, options);
-        return bm;
+        Bitmap ThumbImage = ThumbnailUtils.extractThumbnail(bm, 100, 100);
+        return ThumbImage;
     }
 
     public int calculateInSampleSize(
