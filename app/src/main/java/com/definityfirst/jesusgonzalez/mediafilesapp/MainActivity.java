@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity
 
             fragmentClass = FragmentImagenes.class;
 
+
         } else if (id == R.id.nav_videos) {
 
             fragmentClass = FragmentVideos.class;
@@ -101,7 +102,6 @@ public class MainActivity extends AppCompatActivity
         }
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
